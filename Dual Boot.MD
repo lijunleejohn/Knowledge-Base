@@ -22,9 +22,9 @@ open the terminal by pressing ctrl+alt+T
 
 then copy past this commands to it one after another,
 
-sudo add-apt-repository ppa:yannubuntu/boot-repair
-sudo apt-get update
-sudo apt-get install -y boot-repair
+ * sudo add-apt-repository ppa:yannubuntu/boot-repair
+ * sudo apt-get update
+ * sudo apt-get install -y boot-repair
  
 and by this you will install a tool called boot-repair.
 
