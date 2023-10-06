@@ -1,0 +1,53 @@
+﻿@using System.Collections.Generic;
+@using WebApiDemo.Models;
+@using WebApiDemo.UIModels;
+@model List<WebApiDemo.UIModels.Student>
+<div class="jumbotron">
+    <h1>.NET Web Api Demo Project</h1>
+    <p class="lead">
+        <ol>
+            <li>How to use Entity Framework Code First</li>
+            <li>why we need to models, one for database one for UI</li>
+        </ol>
+    </p>
+    <h2>Demo:</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Edit", new { studentId = 0 })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model[0].StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].GenderId)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GenderId)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

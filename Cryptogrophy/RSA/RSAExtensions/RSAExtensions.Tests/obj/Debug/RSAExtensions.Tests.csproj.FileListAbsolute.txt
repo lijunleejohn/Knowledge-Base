@@ -1,0 +1,10 @@
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\bin\Debug\RSAExtensions.Tests.dll
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\bin\Debug\RSAExtensions.Tests.pdb
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\bin\Debug\RSAExtensions.dll
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\bin\Debug\RSAExtensions.pdb
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\obj\Debug\RSAExtensions.Tests.csprojAssemblyReference.cache
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\obj\Debug\RSAExtensions.Tests.csproj.CoreCompileInputs.cache
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\obj\Debug\RSAExtensions.Tests.csproj.CopyComplete
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\obj\Debug\RSAExtensions.Tests.dll
+E:\lixxjo\KnowledgeBase\Cryptogrophy\RSA\RSAExtensions\RSAExtensions.Tests\obj\Debug\RSAExtensions.Tests.pdb

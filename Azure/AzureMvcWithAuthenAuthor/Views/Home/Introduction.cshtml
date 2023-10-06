@@ -1,0 +1,54 @@
+﻿<h1>Introduction</h1>
+<hr />
+<h2>
+    <a href="/Products/Index">Click to start demo!</a>
+</h2>
+<p>This is a prove of concept demo for an industrial application hosted on the cloud by using Microsoft Azure platform with fully integrated Authentication and Authorization backed by Microsoft.</p>
+<h2>Use the following Logins:</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <p><b>Login ID: </b>reader@ccindustrydemo.onmicrosoft.com</p>
+            <p><b>Password: </b>$GoodMorning$</p>
+            <p><b>Role: </b>Readers</p>
+        </div>
+        <div class="col-sm-4">
+            <p><b>Login ID: </b>writer@ccindustrydemo.onmicrosoft.com</p>
+            <p><b>Password: </b>$GoodMorning$</p>
+            <p><b>Role: </b>Writers</p>
+        </div>
+        <div class="col-sm-4">
+            <p><b>Login ID: </b>admin@ccindustrydemo.onmicrosoft.co</p>
+            <p><b>Password: </b>$GoodMorning$</p>
+            <p><b>Role: </b>Admins</p>
+        </div>
+    </div>
+</div>
+<h2>Roles in the application:</h2>
+<ul>
+    <li>Readers - can only see product records</li>
+    <li>Writers - can see and update product records</li>
+    <li>Admins - can see application related settings, e.g. all the users in this application</li>
+</ul>
+<h2>Authorization rules:</h2>
+<ul>
+    <li>Field "Unit Price" and "Updated By" are treated as confidential so Readers can not see and only Writers can see</li>
+    <li>"Edit" and "Delete" link or operations are only available to Writers role, Readers won't see them on the User Interface</li>
+    <li>"Admin" link or operation is only available to Admins role</li>
+</ul>
+<h2>Enhanced Security Demo</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <p><b>Login ID: </b>mta@ccindustrydemo.onmicrosoft.com</p>
+            <p><b>Password: </b>$GoodMorning$</p>
+            <p><b>Role: </b>Writers</p>
+        </div>
+    </div>
+</div>
+<p>
+    When login with mta@ccindustrydemo.onmicrosoft.com, application will prompt you for additional verfication methods and you can register you cell phone to receive SMS (Short Message Service) for verification every time you login.
+</p>
+<h2>
+    <a href="/Products/Index">Click to start demo!</a>
+</h2>

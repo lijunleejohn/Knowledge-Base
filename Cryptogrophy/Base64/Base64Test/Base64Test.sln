@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base64Test", "Base64Test\Base64Test.csproj", "{E440D7FC-1E91-4A33-A9F4-F8E3BFC12B4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base64-Algorithm", "..\Base64-Algorithm\Base64-Algorithm\Base64-Algorithm.csproj", "{019D419F-CA68-4F99-9AB2-2CA25CAE0DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E440D7FC-1E91-4A33-A9F4-F8E3BFC12B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E440D7FC-1E91-4A33-A9F4-F8E3BFC12B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E440D7FC-1E91-4A33-A9F4-F8E3BFC12B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E440D7FC-1E91-4A33-A9F4-F8E3BFC12B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019D419F-CA68-4F99-9AB2-2CA25CAE0DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019D419F-CA68-4F99-9AB2-2CA25CAE0DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019D419F-CA68-4F99-9AB2-2CA25CAE0DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019D419F-CA68-4F99-9AB2-2CA25CAE0DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F1CCA61-AEB3-42B4-B085-7223A396FBEE}
+	EndGlobalSection
+EndGlobal

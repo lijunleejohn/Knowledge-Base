@@ -1,0 +1,26 @@
+﻿@using Newtonsoft.Json.Linq
+@using AzureMvcWithAuthenAuthor.Infrastructure;
+@{
+    ViewData["Title"] = "Users list";
+}
+
+<h2>Users in your tenant</h2>
+<div class="container">
+    @{
+        IList<UserProfile> users = ViewData["UserProfiles"] as IList<UserProfile>;
+
+        foreach (var user in users)
+        {
+            <div class="row">
+                <div class="col">
+                    <p>@if (!string.IsNullOrEmpty(user.PhotoBase64))
+                    {<img style="margin: 5px 0; width: 100px" src="data:image/jpeg;base64, @user.PhotoBase64" />}
+                    </p>
+                    <p><b>Display Name: </b>@user.DisplayName</p>
+                    <p><b>LoginID: </b>@user.LoginID</p>
+                </div>
+            </div>
+            <hr/>
+        }
+    }
+</div>

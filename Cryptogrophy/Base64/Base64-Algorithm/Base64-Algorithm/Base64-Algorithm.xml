@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Base64-Algorithm</name>
+    </assembly>
+    <members>
+        <member name="T:KnowledgeBase.Crytography.Base64.Base64Algorithm">
+            <summary>
+            This is the Base64 algorithm implementation with source code
+            </summary>
+            <remarks>
+            Base64 is a 6-bits based encoding method, since 64 == 2^6, so it is a 6 bit based encoding, since each 6-bit will occupied as an independent 8-bit byte, the encoded byte length will be 4/3 times than the original byte length
+            </remarks>
+        </member>
+        <member name="M:KnowledgeBase.Crytography.Base64.Base64Algorithm.Base64Encoding(System.Byte[])">
+            <summary>
+            Base64 Encoder
+            </summary>
+            <remarks>
+            Base64 encoding is to transfer 8-bit bytes array to 6-bit bytes array, so every 3 8-bit bytes will be transfered to 4 6-bit blocks
+            </remarks>
+            <param name="data">The un-encoded byte array of the object</param>
+            <returns>a character array of Base64 encoded object</returns>
+        </member>
+        <member name="M:KnowledgeBase.Crytography.Base64.Base64Algorithm.Base64Decoding(System.Char[])">
+            <summary>
+            Base64 Decoder
+            </summary>
+            <remarks>
+            Base64 decoding is to transfer 6-bit bytes array back to 8-bit bytes array, so every 4 6-bit block will be transfered to 3 8-bit bytes
+            </remarks>
+            <param name="data">The Base64 encoded character array</param>
+            <returns>The original un-encoded object byte array</returns>
+        </member>
+        <member name="M:KnowledgeBase.Crytography.Base64.Base64Algorithm.SixBitToChar(System.Byte)">
+            <summary>
+            Lookup Base64 character codes based on 6-bit value
+            </summary>
+            <param name="b"></param>
+            <returns>a 8-bit character</returns>
+        </member>
+        <member name="M:KnowledgeBase.Crytography.Base64.Base64Algorithm.CharToSixBit(System.Char)">
+            <summary>
+            Covert Base64 character code back to a 8-bit byte (since it's Base64 char so only has 6-bit valid information)
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

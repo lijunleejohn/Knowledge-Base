@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesTest", "TripleDESTest\TripleDESTest.csproj", "{309B9855-7BB4-480C-A1FE-40D6142E4AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{309B9855-7BB4-480C-A1FE-40D6142E4AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309B9855-7BB4-480C-A1FE-40D6142E4AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309B9855-7BB4-480C-A1FE-40D6142E4AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309B9855-7BB4-480C-A1FE-40D6142E4AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C3E0097-B317-4179-93CF-71585DF857A0}
+	EndGlobalSection
+EndGlobal

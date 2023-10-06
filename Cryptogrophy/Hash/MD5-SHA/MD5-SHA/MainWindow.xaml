@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Hash Function Test" Height="561" Width="800">
+    <Grid>
+        <Label Content="Hash function is any function that can be used to map data of arbitrary size to fixed-size values, it is no Crytography, there is no key." HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.615"/>
+        <TextBox x:Name="txtClearText" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" Height="51" Margin="10,28,410,0" TextWrapping="Wrap" AcceptsReturn="True" Text="Orginal text here ..." VerticalAlignment="Top" Width="Auto"/>
+        <Button Name="btnHashText" Content="Hash Text" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="75" Click="btnHashText_Click"/>
+        <Label Content="MD5 - Hash size is 128 bits, after Base64 encoded becomes 24 bytes" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.615"/>
+        <TextBox x:Name="txtMD5" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" Height="51" Margin="10,158,10,0" TextWrapping="Wrap" AcceptsReturn="True" Text="" VerticalAlignment="Top" Width="Auto"/>
+        <Label Content="SHA-1 - Hash size is 160 bits, after Base64 encoded becomes 28 bytes" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.615"/>
+        <TextBox x:Name="txtSHA1" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" Height="51" Margin="10,257,10,0" TextWrapping="Wrap" AcceptsReturn="True" Text="" VerticalAlignment="Top" Width="Auto"/>
+        <Label Content="SHA-2 256 - Has size is 256 bits, after Base64 encoded becomes 44 bytes" HorizontalAlignment="Left" Margin="10,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.615"/>
+        <TextBox x:Name="txtSHA256" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" Height="51" Margin="10,353,10,0" TextWrapping="Wrap" AcceptsReturn="True" Text="" VerticalAlignment="Top" Width="Auto"/>
+        <Label Content="SHA-2 512 - Has size is 512 bits, after Base64 encoded becomes 88 bytes" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.615"/>
+        <TextBox x:Name="txtSHA512" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" Height="51" Margin="10,454,10,0" TextWrapping="Wrap" AcceptsReturn="True" Text="" VerticalAlignment="Top" Width="Auto"/>
+        <Label Content="Select an image file to open:" HorizontalAlignment="Left" Margin="387,31,0,0" VerticalAlignment="Top" Width="161"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="553,34,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Image Name="imgOriginal" HorizontalAlignment="Left" Height="68" Margin="442,62,0,0" VerticalAlignment="Top" Width="340"/>
+        <Label Name="lblFileName" Content="" HorizontalAlignment="Left" Margin="442,127,0,0" VerticalAlignment="Top" Width="237" RenderTransformOrigin="0.485,1.154"/>
+        <Button Name="btnHashImage" Content="Hash Image" HorizontalAlignment="Left" Margin="707,133,0,0" VerticalAlignment="Top" Width="75" Click="btnHashImage_Click"/>
+    </Grid>
+</Window>
