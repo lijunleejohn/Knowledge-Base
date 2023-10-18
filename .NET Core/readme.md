@@ -1,4 +1,5 @@
 how to check nullable variable null or not: 
+- use !=null
 - use .HasValue or
 - "is operator with type pattern" - "a is int valueOfA" where valueOfA is the declaration pattern, which only when is condition matches it will declare a new variable
 ```
