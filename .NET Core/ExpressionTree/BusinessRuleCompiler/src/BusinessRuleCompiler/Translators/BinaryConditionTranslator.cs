@@ -8,6 +8,7 @@ namespace BusinessRuleCompiler.Translators
 {
     internal partial class ConditionTranslator
     {
+        // BinaryConditionTranslator deals with BinaryCondition, comparison type of BinaryExpress, like a > b, a > 3.6 etc.
         private class BinaryConditionTranslator
         {
             private readonly Type _modelType;
