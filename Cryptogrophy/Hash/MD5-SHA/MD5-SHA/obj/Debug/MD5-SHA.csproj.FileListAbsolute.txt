@@ -1,0 +1,15 @@
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\bin\Debug\MD5-SHA.exe.config
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\bin\Debug\MD5-SHA.exe
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\bin\Debug\MD5-SHA.pdb
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA.csproj.AssemblyReference.cache
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MainWindow.g.cs
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\App.g.cs
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA_MarkupCompile.cache
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA_MarkupCompile.lref
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MainWindow.baml
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA.g.resources
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\HashAllInOne.Properties.Resources.resources
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA.csproj.GenerateResource.cache
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA.csproj.CoreCompileInputs.cache
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA.exe
+C:\Repo\Knowledge-Base\Cryptogrophy\Hash\MD5-SHA\MD5-SHA\obj\Debug\MD5-SHA.pdb
