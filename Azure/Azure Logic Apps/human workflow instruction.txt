@@ -1,0 +1,38 @@
+{
+   "type": "object",
+   "properties": {
+      "Invoice": {
+         "type": "object",
+         "properties": {
+            "ID": {
+               "type": "string"
+            },
+            "Type": {
+               "type": "string"
+            }
+         }
+      }
+   }
+}
+
+{
+  "invoice": {
+    "detaiil": {
+      "id": "1",
+      "amount": 1200.36
+    },
+    "action": "rework",
+    "next" : {
+      "participant": "John Li",
+      "email": "lijunleejohn@gmail.com",
+      "role": "Budget Authority",
+      "options": "Approve, Reject, Review, Contribute, Rework"
+    }
+  }
+ }
+ 
+ Submit workflow link:
+ https://prod-01.eastus.logic.azure.com:443/workflows/a49ffe08c8d448f4aada79b2d1c15276/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=lQhHonf3qXg_nK-O9UvPjLPwSfubiqElVQh_wbWPIX4
+ 
+ Approval workflow link:
+ https://prod-28.eastus.logic.azure.com:443/workflows/c6f9f12f4cca4e599acd9ea7f435b6e3/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=XCzdGjh92AebjDHj2mbjXwk3kyRZOS95M_l-3wfCA40
