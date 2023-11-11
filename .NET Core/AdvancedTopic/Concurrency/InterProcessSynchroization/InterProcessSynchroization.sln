@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterProcessSynchroization", "InterProcessSynchroization\InterProcessSynchroization.csproj", "{F9BD2D86-30AA-4C04-93ED-3AE9482017FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9BD2D86-30AA-4C04-93ED-3AE9482017FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9BD2D86-30AA-4C04-93ED-3AE9482017FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9BD2D86-30AA-4C04-93ED-3AE9482017FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9BD2D86-30AA-4C04-93ED-3AE9482017FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F7E9960-E75D-44EE-888B-D4BDD5BA247B}
+	EndGlobalSection
+EndGlobal

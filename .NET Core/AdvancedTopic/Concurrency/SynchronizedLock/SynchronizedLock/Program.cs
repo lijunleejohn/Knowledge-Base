@@ -21,7 +21,7 @@ var tasks = new Task[threads_dimension];
 for (int i = 0; i < threads_dimension; i++)
 {
     // on the statement below if you use i.ToStri]ng() i will be always 10, which means the task does not run immediately, it will start running at Task.WaitAll()
-    tasks[i] = Task.Run(() => { log($"Task {DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss.fff tt")}: This is a demo of multiple thread synchroization.\r\n"); });
+    tasks[i] = Task.Run(() => { log($"ProcessId: {System.Diagnostics.Process.GetCurrentProcess().Id}, ThreadId: {Thread.CurrentThread.ManagedThreadId},  Task {DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss.fff tt")}: This is a demo of multiple thread synchroization.\r\n"); });
 }
 mre.Set(); // signal the 1st thread to stsart, if you put this line under the next line it won't work and will be blocked forver
 mwh.Set();
@@ -37,12 +37,6 @@ because it is being used by another process.'
 /*
 void log(string message)
 {
-
-    if (!File.Exists(logFile))
-    {
-        File.Create(logFile);
-    }
-
     File.AppendAllText(logFile, message);
 }
 */
@@ -61,11 +55,6 @@ void log(string message)
 {
     lock (logObject)
     {
-        if (!File.Exists(logFile))
-        {
-            File.Create(logFile);
-        }
-
         File.AppendAllText(logFile, message);
     }
 }
@@ -82,11 +71,6 @@ This class cannot be inherited.
 void log(string message)
 {
     myResetEvent.WaitOne();
-    if (!File.Exists(logFile))
-    {
-        File.Create(logFile);
-    }
-
     File.AppendAllText(logFile, message);
     myResetEvent.Set();
 }
@@ -104,10 +88,6 @@ void log(string message)
 {
     mre.WaitOne();
     mre.Reset(); // unsignaled to block the other threads
-    if (!File.Exists(logFile))
-    {
-        File.Create(logFile);
-    }
 
     File.AppendAllText(logFile, message);
     mre.Set();  // signaled to allow the next thread to proceed
@@ -123,10 +103,6 @@ WaitHandler - with protected constructor, encapsulates operating system-specific
 void log(string message)
 {
     mwh.WaitOne();
-    if (!File.Exists(logFile))
-    {
-        File.Create(logFile);
-    }
 
     File.AppendAllText(logFile, message);
     mwh.Set();  // signaled to allow the next thread to proceed
@@ -139,19 +115,21 @@ void log(string message)
 WaitHandler - with protected constructor, encapsulates operating system-specific objects that wait for exclusive access to shared resources.
 Mutext - a synchronization primitive that can also be used for interprocess synchronization. It has the interprocess capability while log only works in the same AppDoamin
  */
-/*
+
 void log(string message)
 {
     mut.WaitOne();
-    if (!File.Exists(logFile))
-    {
-        File.Create(logFile);
-    }
 
+    // no need for the following block of code since File.AppendAllText() will automatically create a new file if no exists. If enalbe the block it will hand if the file not exists
+    //if (!File.Exists(logFile))
+    //{
+    //    File.Create(logFile);
+    //}
+    
     File.AppendAllText(logFile, message);
     mut.ReleaseMutex();  // signaled to allow the next thread to proceed
 }
-*/
+
 #endregion
 
 #region Semaphore - inherited from WaitHandler
@@ -159,15 +137,12 @@ void log(string message)
 WaitHandler - with protected constructor, encapsulates operating system-specific objects that wait for exclusive access to shared resources.
 Semaphore - Limits the number of threads that can access a resource or pool of resources concurrently.
  */
+/*
 void log(string message)
 {
     smp.WaitOne();
-    if (!File.Exists(logFile))
-    {
-        File.Create(logFile);
-    }
-
     File.AppendAllText(logFile, message);
     smp.Release(); // signaled to allow the next thread to proceed
 }
+*/
 #endregion
