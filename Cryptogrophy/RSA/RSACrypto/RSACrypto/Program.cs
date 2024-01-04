@@ -30,6 +30,8 @@ class RSACrypto
                 //and a boolean flag specifying no OAEP padding.
                 encryptedData = RSAEncrypt(dataToEncrypt, RSA.ExportParameters(false), false);
 
+                //RSA.ExportParameters(true) is the RSA key information where true includes Private Key
+                // After calling RSA.ExportParameters(true), you can call RSA.ToXmlString(true) to export the RSA Key to XML string including Private Key
                 //Pass the data to DECRYPT, the private key information 
                 //(using RSACryptoServiceProvider.ExportParameters(true),
                 //and a boolean flag specifying no OAEP padding.
